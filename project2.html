@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 1</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your stylesheet -->
+  <style>
+    /* CSS for image background */
+    body {
+      margin: 0; /* Remove default body margin */
+      padding: 0; /* Remove default body padding */
+      color: #0a0b03; /* Text color (black) */
+    }
+
+    #background-container {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1; /* Place the background behind other content */
+      animation: fadeInOut 200s infinite; /* Apply fadeInOut animation */
+    }
+
+    @keyframes fadeInOut {
+      0% {
+        opacity: 0; /* Start with opacity 0 */
+      }
+      50% {
+        opacity: 1; /* Transition to opacity 1 */
+      }
+      100% {
+        opacity: 0; /* Transition back to opacity 0 */
+      }
+    }
+
+    header {
+      background-color: rgba(112, 129, 115, 0.5); /* Add semi-transparent background for better readability */
+      padding: 20px; /* Add padding to the header */
+    }
+
+    #project-details {
+      padding: 20px; /* Add padding to the project details section */
+      max-width: 800px; /* Limit the maximum width of the content */
+      margin: 0 auto; /* Center the content horizontally */
+    }
+
+    #project-details h2 {
+      margin-bottom: 20px; /* Add spacing below the project title */
+    }
+
+    #project-details p {
+      margin-bottom: 20px; /* Add spacing between paragraphs */
+    }
+  </style>
+</head>
+<body>
+  <!-- Container for the background image -->
+  <div id="background-container">
+    <img src="movie.jpg" alt="Background Image" style="width: 100%; height: 100%; object-fit: cover;">
+  </div>
+
+  <header>
+    <h1>Project 1</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="project-details">
+    <h2>
+        TITLE: Movie Ticket Booking Website System
+      </h2>
+      <p>
+      <b>Description:
+        The project objective is to book cinema tickets in online. The Ticket Reservation System is an
+        Internet based application that can be accessed throughout the Net and can be accessed by anyone who has a net
+        connection. This application will reserve the tickets. This online ticket reservation system provides a website for
+        a cinema hall where any user of internet can access it. User is required to login to the system and needs a credit
+        card for booking the tickets. The website provides complete information regarding currently running movies on
+        all the screens with details of show timings, available seats. Ticket reservations are done using credit card. Our
+        online tickets reservation system is one of the best opportunities for those who cannot afford enough time to get
+        their tickets reserved standing in long queues. People can book tickets online at any time of day or night</p>
+    <!-- Add more project details as needed -->
+</b></section>
+
+  
+</body>
+</html>

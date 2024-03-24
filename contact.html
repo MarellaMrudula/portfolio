@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="styles.css"> 
+  <style>
+    /* CSS for body background */
+    body {
+      margin: 0;
+      padding: 0;
+      /* Remove background images */
+      /* background-image: url('contact.jpg'), url('contact1.jpg'); */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: rgb(14, 14, 14);
+    }
+
+    /* CSS for image animation */
+    @keyframes fadeInOut {
+      0% {
+        opacity: 0; /* Start with opacity 0 */
+      }
+      50% {
+        opacity: 1; /* Transition to opacity 1 */
+      }
+      100% {
+        opacity: 0; /* Transition back to opacity 0 */
+      }
+    }
+
+    /* Apply animation to both images */
+    #image1, #image2 {
+      width: 100%; /* Set width of images to cover the entire viewport */
+      height: 100%; /* Set height of images to cover the entire viewport */
+      position: fixed; /* Position images fixed */
+      top: 0;
+      left: 0;
+      z-index: -1; /* Place images behind other content */
+      animation: fadeInOut 60s infinite; /* Apply fadeInOut animation for 1 minute (60 seconds) */
+    }
+
+    /* Hide second image initially */
+    #image2 {
+      opacity: 0;
+      animation-delay: 60s; /* Delay appearance of the second image by 1 minute (60 seconds) */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>You can reach me at:</p>
+    <ul>
+      <li>Email: marellamrudula05@gmail.com</li>
+      <li>Phone: +91-9391187183</li>
+    </ul>
+  </section>
+
+  <!-- Remove the two images -->
+ 
+</body>
+</html>
